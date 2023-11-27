@@ -30,7 +30,7 @@ span{
 }
 
 body {
-  background-color: #111111;
+  background-color: #e8e8e8;
   font-family: var(--font-general);
   margin: 0;
   position: relative;
@@ -39,70 +39,31 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-.game-container{
+.main{
+  width: 100%;
   display: flex;
-  width: 80%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-  gap: 15px;
-  margin: 90px 0px;
+  margin-top: 80px;
 }
-
-.word{
+.card{
+  width: 650px;
+  background-color: rgb(84, 84, 84);
+  height: 400px;
+}
+#numbers{
+  display: grid;
+  grid-template-columns: repeat(11,50px);
+}
+#start-game{
+  margin-top: 30px;
+}
+span{
+  align-items: center;
+  border: 1px solid #000;
   display: flex;
-  align-items: center;
+  height: 45px;
+  color: #111111;
   justify-content: center;
-  gap: 15px;
-}
-
-.letter{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  border: 1px solid white;
-}
-
-.title{
-  color: white;
-  font-size: 3rem;
-}
-
-.form-input{
-  width: 400px;
-  height: 50px;
-  background-color: #1e1e1e;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  color: #ccc;
-  font-size: 1.5rem;
-}
-.form-input::placeholder{
-  font-size: 1.5rem;
-  color: #ccc;
-}
-.form-input:focus{
-  outline: none;
-}
-
-.popup{
-  align-items: center;
-  background-color: #fff;
-  border-radius: 5px;
-  height: 50px;
-  justify-content: center;
-  width: 300px;
-  position: absolute;
-  top: 40px;
-}
-
-.flex{
-  display: flex;
-}
-.hide{
-  display: none;
+  width: 51px;
 }

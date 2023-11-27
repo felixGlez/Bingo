@@ -6,33 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>WORDLE</title>
+    <title>Bingo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <div class="game-container">
-      <h1 class="title">WORDLE</h1>
-      <div class="word">
-      </div>
-      <div class="word">
-      </div>
-      <div class="word">
-      </div>
-      <div class="word">
-      </div>
-      <div class="word">
-      </div>
-      <form id="user-word">
-        <input class="form-input" type="text" placeholder="type your solution" name="word">
-      </form>
+    <div class="main">
+      <div id="user-card" class="card"></div>
+      <div id="numbers"></div>
+      <div id="pc-card" class="card"></div>
     </div>
+    <button id="start-game">START GAME</button>
 
-    <div class="popup hide" id="popup">
-      <p>¡La palabra debe tener 5 letras!</p>
-    </div>
 
     <script type="module" src="./js/index.js"></script>
   </body>
