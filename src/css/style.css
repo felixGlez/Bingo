@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root{
+  --font-general: 'Josefin Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span{
+  color: white;
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: #111111;
+  font-family: var(--font-general);
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-container{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin: 90px 0px;
+}
+
+.word{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.letter{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 1px solid white;
+}
+
+.title{
+  color: white;
+  font-size: 3rem;
+}
+
+.form-input{
+  width: 400px;
+  height: 50px;
+  background-color: #1e1e1e;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #ccc;
+  font-size: 1.5rem;
+}
+.form-input::placeholder{
+  font-size: 1.5rem;
+  color: #ccc;
+}
+.form-input:focus{
+  outline: none;
+}
+
+.popup{
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 50px;
+  justify-content: center;
+  width: 300px;
+  position: absolute;
+  top: 40px;
+}
+
+.flex{
+  display: flex;
+}
+.hide{
+  display: none;
+}
