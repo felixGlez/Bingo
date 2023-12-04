@@ -78,3 +78,9 @@ body {
 .orange{
   background-color: lightcoral;
 }
+.hide{
+  display: none;
+}
+.display{
+  display: flex;
+}
